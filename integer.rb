@@ -1,5 +1,11 @@
+#Task 1.
+#Implement the function to find the combination of 4 digits in a row which
+#gives the maxmultiplication. If object is not a string or there are no
+#combinations found - return nil. If combination is found - return
+#it`s multiplication result.
 
 def max_multiplication(string)
+  return nil if !string.is_a?(String) || string.scan(/\d{4,}/).empty?
   @arr=[]
 #Находим все числовые (4+) последовательности
   string.scan(/\d{4,}/).map do |a|
@@ -12,5 +18,5 @@ def max_multiplication(string)
 end
 
 
-p max_multiplication('qwetgvg54635hg537j8k97erweg45437u53jnmi,986erhgtr')
-p 5*7*3*4
+
+
