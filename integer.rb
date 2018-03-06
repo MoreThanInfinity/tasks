@@ -18,5 +18,3 @@ def max_multiplication(string)
 end
 
 
-
-
